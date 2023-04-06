@@ -1,6 +1,7 @@
 import numpy as np
 cos, sin, tan, radians, degrees, arccos, arcsin, arctan = np.cos, np.sin, np.tan, np.radians, np.degrees, np.arccos, np.arcsin, np.arctan2
 PI = 3.14159
+
 class Vector2:
     '''x and y components OR the length and angle from X-Axis Counter Clockwise in Degrees'''
     def __init__(self,x=0, y=0, r=0, dtheta=0):

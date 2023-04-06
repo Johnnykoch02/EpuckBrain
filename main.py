@@ -4,7 +4,6 @@ from src.RL.PretrainModel import pretrain_agent
 from sb3_contrib import ppo_recurrent
 from src.Utils.Vector2 import Vector2
 from src.Utils.DataUtils import save_cell_prediction_npz
-import numpy as np
 import os
 
 SAVE_DIR = os.path.join(os.getcwd(), 'data', 'CellPrediction')

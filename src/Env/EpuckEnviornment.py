@@ -51,7 +51,6 @@ class EpuckEnv(Env):
         self.listener.close()
     def __init__(self, connection=True):
         super().__init__()        
-
         spaces = {
             'delta_t': Box(low= -inf, high= inf, shape=(1, )), ### <Concatenation>
             'left_distance': Box(low= -inf, high= inf, shape=(1, )),

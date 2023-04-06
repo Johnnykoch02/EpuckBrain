@@ -67,8 +67,7 @@ def load_cell_prediction_npz(save_dir, noise_level=0.01):
     cameraLeft_data_norm = np.array(cameraLeft_data)
     cameraRight_data_norm = np.array(cameraRight_data)
     current_cell_data = np.array(current_cell_data) - 1
-    print(np.shape(current_cell_data), np.shape(theta_data_norm), np.shape(lidar_data_norm))
-         
+    
     # # Reshape the data into a rectangular matrix.
     # theta_data_norm = np.reshape(theta_data_norm, (-1, theta_data_norm[0].shape[0]))
     # lidar_data_norm = np.reshape(lidar_data_norm, (-1, lidar_data_norm[0].shape[0]))

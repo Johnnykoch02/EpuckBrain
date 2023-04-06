@@ -77,7 +77,6 @@ def pretrain_agent(
 #   th.manual_seed(seed)
   device = th.device("cuda" if use_cuda else "cpu")
   print(device)
-#   kwargs = {"num_workers": 1, "pin_memory" : True} if use_cuda else {}
   kwargs = {}
   criterion = nn.BCELoss()
   

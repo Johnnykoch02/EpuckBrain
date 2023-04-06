@@ -132,7 +132,6 @@ class CellPredictionNetwork(nn.Module):
         ### BLOCK 1 ###
         encoded_positioning_tensors = {}
         encoded_imaging_tensors = []
-        '''extractors contain nn.Modules that do all of our processing '''
         for key, extractor in self.extractors.items():
             if 'camera' in key:
                 encoded_imaging_tensors.append(extractor(observations[key]))
